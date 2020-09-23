@@ -15,4 +15,6 @@ description: |-
 ## Argument Reference
 The following arguments are supported:
 
-* **vulnerability_scan_policy** - (Optional) The frequency of the vulnerability scanning is done. Can be to **"hourly"**, **"daily"** or **"weekly"**
+* **vulnerability_scan_policy** - (Required) The frequency of the vulnerability scanning is done. Can be to **"hourly"**, **"daily"**, **"weekly"**, or **"custom"**
+
+* **cron_schedule** - (Optional) Cron schedule for vulnerability scanning. Only applies when `vulnerability_scan_policy` is set to **"custom"**

@@ -63,5 +63,14 @@
     {
         "op": "remove",
         "path": "/definitions/ConfigurationsResponse/properties/ldap_scope/type"
+    },
+    {
+        "op": "add",
+        "path": "/paths/~1system~1scanAll~1schedule/post/responses",
+        "value": {
+            "201": {
+                "description": "Created scan_all's schedule successfully."
+            }
+        }
     }
 ]
